@@ -176,6 +176,7 @@ fn input_product_number(limit: usize) -> usize {
             Ok(num) => {
                 if num > limit || num < 1 {
                     println!("{} Error: Input Correct Number", str_input);
+                    str_input = String::from("");
                     continue;
                 }
                 num
